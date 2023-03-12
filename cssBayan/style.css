@@ -9,8 +9,10 @@
 }
 
 .fa-solid{
-
     display: none;
+}
+i{
+    font-weight: bolder;
 }
 
 body {
@@ -29,8 +31,9 @@ body {
 
 .container:hover>.accordion>.accordion-header>.fa-solid {
     display: inline;
+    font-size: x-large;
+    font-weight: bold;
 }
-
 
 .accordion-header {
     display: flex;
@@ -88,4 +91,98 @@ input[type="radio"] {
 
 .accordion-btn:checked~.accordion-body {
     height: 400px;
+}
+
+@media only screen and (max-width: 320px) {
+    .main-title {
+        margin-bottom: 5px;
+        font-size: x-large;
+    }
+    .container {
+        margin-top: 3vh;
+        width: 90%;
+    }
+
+    .accordion-header>h2{
+        font-size: larger;
+    }
+    .accordion-header{
+        margin: 5px auto;
+    }
+
+    .accordion-body {
+        margin: 5px auto;
+    }
+    .meme-img {
+        width: 100%;
+    }
+
+    .fa-solid{
+        font-size: larger;
+        font-weight: bold;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 820px) {
+    .main-title {
+        margin-bottom: 10px;
+    }
+    .container {
+        margin-top: 5vh;
+        width: 80%;
+    }
+
+    .accordion-header>h2{
+        font-size: x-large;
+    }
+    .accordion-header{
+        margin: 5px auto;
+    }
+
+    .accordion-body {
+        padding: 0;
+        margin: 0;
+    }
+    .meme-img {
+        width: 70%;
+        
+    }
+    .fa-solid{
+        font-size: x-large;
+        font-weight: bold;
+    }
+  
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+    .main-title {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+ 
+    .accordion-header>h2{
+        font-size: 35px;
+    }
+    .accordion-header{
+        margin: 10px auto;
+    }
+
+    .accordion-body {
+        padding: 0;
+        margin: 15px;
+    }
+    .meme-img {
+        width: 40%;
+    }
+    .fa-solid{
+        font-size: xx-large;
+        font-weight: bold;
+    }
+  
+
 }
