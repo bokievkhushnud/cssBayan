@@ -116,7 +116,7 @@ input[type="radio"] {
 
     .meme-img {
         width: 90%;
-        height: auto;
+
         
     }
 
@@ -145,7 +145,7 @@ input[type="radio"] {
     }
     .meme-img {
         width: 75%;
-        height: fit-content;
+
         
     }
 
