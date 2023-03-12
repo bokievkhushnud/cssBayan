@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-title {
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 8vh;
+    width: 70%;
+}
+
+.container:hover>.accordion>.accordion-header {
+    color: black;
+}
+
+.accordion-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    cursor: pointer;
+    color: rgb(51, 120, 177);
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.meme-img {
+    width: 50%;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion-header:hover+.accordion-body {
+    max-height: max-content;
+}
+
+.accordion-btn:checked+.accordion-header {
+    color: black;
+}
+
+.accordion-header:hover>i {
+    transform: rotate(45deg);
+    transition: 0.25s ease-in-out;
+}
+
+.accordion-btn:checked+.accordion-header>i {
+    transform: rotate(45deg);
+    transition: 0.25s ease-in-out;
+}
+
+.accordion-btn:checked~.accordion-body {
+    max-height: max-content;
+}
