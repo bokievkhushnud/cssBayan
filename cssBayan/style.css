@@ -8,6 +8,11 @@
     margin-bottom: 20px;
 }
 
+.fa-solid{
+
+    display: none;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -21,6 +26,11 @@ body {
 .container:hover>.accordion>.accordion-header {
     color: black;
 }
+
+.container:hover>.accordion>.accordion-header>.fa-solid {
+    display: inline;
+}
+
 
 .accordion-header {
     display: flex;
@@ -37,30 +47,38 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
+    transition: height 0.5s ease;
+    margin: 10px auto;
 }
 
 .meme-img {
     width: 50%;
+
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     display: none;
 }
 
-.accordion-header:hover+.accordion-body {
-    max-height: max-content;
+.accordion:hover>.accordion-body {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    height: 400px;
+}
+
+.accordion:hover> .accordion-header>i {
+    transform: rotate(45deg);
+    transition: 0.25s ease-in-out;
+}
+
+.accordion:active> .accordion-header> *{
+    color: rgb(51, 120, 177);
 }
 
 .accordion-btn:checked+.accordion-header {
     color: black;
-}
-
-.accordion-header:hover>i {
-    transform: rotate(45deg);
-    transition: 0.25s ease-in-out;
 }
 
 .accordion-btn:checked+.accordion-header>i {
@@ -69,5 +87,5 @@ input[type="checkbox"] {
 }
 
 .accordion-btn:checked~.accordion-body {
-    max-height: max-content;
+    height: 400px;
 }
