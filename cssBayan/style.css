@@ -5,7 +5,7 @@
 }
 
 .main-title {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .fa-solid{
@@ -40,9 +40,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    margin: 0.5rem auto;
     cursor: pointer;
     color: rgb(51, 120, 177);
+}
+
+hr{
+    border-color:rgb(236, 229, 229) ;
 }
 
 .accordion-body {
@@ -53,7 +57,7 @@ body {
     height: 0;
     overflow: hidden;
     transition: height 0.5s ease;
-    margin: 10px auto;
+    margin: 0.5rem auto;
 }
 
 .meme-img {
@@ -68,7 +72,7 @@ input[type="radio"] {
 .accordion:hover>.accordion-body {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    height: 400px;
+    height: 25rem;
 }
 
 .accordion:hover> .accordion-header>i {
@@ -90,12 +94,11 @@ input[type="radio"] {
 }
 
 .accordion-btn:checked~.accordion-body {
-    height: 400px;
+    height: 25rem;
 }
 
 @media only screen and (max-width: 320px) {
     .main-title {
-        margin-bottom: 5px;
         font-size: x-large;
     }
     .container {
@@ -106,13 +109,6 @@ input[type="radio"] {
     .accordion-header>h2{
         font-size: larger;
     }
-    .accordion-header{
-        margin: 5px auto;
-    }
-
-    .accordion-body {
-        margin: 5px auto;
-    }
     .meme-img {
         width: 100%;
     }
@@ -122,14 +118,11 @@ input[type="radio"] {
         font-weight: bold;
     }
 
-
 }
 
 
 @media only screen and (max-width: 820px) {
-    .main-title {
-        margin-bottom: 10px;
-    }
+
     .container {
         margin-top: 5vh;
         width: 80%;
@@ -138,10 +131,6 @@ input[type="radio"] {
     .accordion-header>h2{
         font-size: x-large;
     }
-    .accordion-header{
-        margin: 5px auto;
-    }
-
     .accordion-body {
         padding: 0;
         margin: 0;
@@ -161,26 +150,24 @@ input[type="radio"] {
 
 @media only screen and (min-width: 1920px) {
     .main-title {
-        margin-bottom: 15px;
-        font-size: 45px;
+        margin-bottom: 2rem;
+        font-size: 4rem;
     }
  
     .accordion-header>h2{
-        font-size: 35px;
+        font-size: 3rem;
     }
-    .accordion-header{
-        margin: 10px auto;
-    }
+
 
     .accordion-body {
         padding: 0;
-        margin: 15px;
+        margin: 1rem;
     }
     .meme-img {
         width: 40%;
     }
     .fa-solid{
-        font-size: xx-large;
+        font-size: 4rem;
         font-weight: bold;
     }
   
